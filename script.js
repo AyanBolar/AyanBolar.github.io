@@ -1,14 +1,12 @@
-window.onscroll = function() {
-    stickyNav();
-};
-
-var nav = document.querySelector('header');
-var sticky = nav.offsetTop;
-
-function stickyNav() {
-    if (window.pageYOffset > sticky) {
-        nav.classList.add("sticky");
+// JavaScript for scroll-triggered animations
+window.addEventListener('scroll', function () {
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+      section.classList.add('in-view');
     } else {
-        nav.classList.remove("sticky");
+      section.classList.remove('in-view');
     }
-}
+  });
+});
