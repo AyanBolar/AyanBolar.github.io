@@ -1,72 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayan Bolar - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ayan Bolar">
+  <meta name="description" content="Ayan Bolar's Portfolio Website">
+  <title>Ayan Bolar - Portfolio</title>
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home">
-        <div class="hero">
-            <h1>Hi, I'm Ayan Bolar</h1>
-            <p>I'm a Computer Science student passionate about AI, Web Development, and Algo Trading.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Computer Science undergrad exploring technologies like Artificial Intelligence, Web Development, and Algo Trading. I am passionate about solving real-world problems through technology and building innovative solutions. I aspire to create impactful tech products and am currently working on various projects in AI and fintech.</p>
-    </section>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home-content">
+      <h1>Hi, I'm Ayan Bolar</h1>
+      <p>I'm a Computer Science student passionate about AI, Web Development, and Algo Trading.</p>
+      <button><a href="#projects">View My Work</a></button>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <img src="assets/images/project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>This project is a web application built using JavaScript and Node.js to solve XYZ problem. It integrates APIs and offers a seamless user experience.</p>
-                <a href="https://project-link.com" target="_blank" class="btn">View Project</a>
-            </div>
-            <div class="project">
-                <img src="assets/images/project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>A machine learning project to predict stock market trends using Python and TensorFlow. The project achieved an accuracy of over 85% in predictions.</p>
-                <a href="https://project-link.com" target="_blank" class="btn">View Project</a>
-            </div>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-content">
+      <img src="your-photo.jpg" alt="Ayan Bolar" class="about-photo">
+      <p>I am a Computer Science undergrad exploring technologies like Artificial Intelligence, Web Development, and Algo Trading. I am passionate about solving real-world problems through technology and building innovative solutions.</p>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me via email at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>This project is a web application built using JavaScript and Node.js to solve XYZ problem.</p>
+        <button><a href="#">View Project</a></button>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>A machine learning project to predict stock market trends using Python and TensorFlow.</p>
+        <button><a href="#">View Project</a></button>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Ayan Bolar. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
-            <a href="https://github.com/your-username" target="_blank">GitHub</a>
-        </div>
-    </footer>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me via email at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me:</p>
+    <ul>
+      <li><a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+      <li><a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a></li>
+    </ul>
+    <p>© 2024 Ayan Bolar. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
