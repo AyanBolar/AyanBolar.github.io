@@ -1,9 +1,12 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f1f1f1;
+  color: #333;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -15,53 +18,83 @@ a {
   color: inherit;
 }
 
-/* Sticky Navigation */
+/* Navigation Bar */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
-  padding: 15px;
-  z-index: 10;
-  box-shadow: 0 4px 2px -2px gray;
+  background: rgba(44, 62, 80, 0.9);
+  padding: 15px 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+nav .logo a {
+  color: #ecf0f1;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding: 0 20px;
+  letter-spacing: 2px;
+}
+
+nav .nav-links {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 
-nav ul li {
-  list-style-type: none;
-  margin: 0 20px;
+nav .nav-links li {
+  list-style: none;
 }
 
-nav ul li a {
-  color: white;
+nav .nav-links a {
+  color: #ecf0f1;
   font-size: 18px;
   text-transform: uppercase;
-  padding: 8px;
+  padding: 10px 15px;
 }
 
-nav ul li a:hover {
+nav .nav-links a:hover {
   color: #f39c12;
   text-decoration: underline;
 }
 
-/* Home Section */
+/* Home Section with Background Video */
 #home {
+  position: relative;
   height: 100vh;
-  background: #2980b9;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#bg-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  color: white;
 }
 
 #home h1 {
-  font-size: 2.5em;
+  font-size: 3em;
+  margin-bottom: 10px;
 }
 
 #home p {
@@ -69,11 +102,15 @@ nav ul li a:hover {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: #f39c12;
   border: none;
   color: white;
   cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
 }
 
 button a {
@@ -84,54 +121,71 @@ button:hover {
   background-color: #2980b9;
 }
 
-/* About Section */
+/* About Section with Image Animation */
 #about {
-  background: #f5f5f5;
-  padding: 50px 20px;
+  padding: 80px 20px;
+  background-color: #ecf0f1;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 50px;
+}
+
+.about-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 .about-content {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
 }
 
-.about-photo {
-  width: 150px;
-  height: 150px;
+.about-photo img {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
+  animation: fadeIn 2s ease-in-out;
 }
 
-#about p {
-  max-width: 600px;
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* Projects Section */
 #projects {
-  background: #ecf0f1;
-  padding: 50px 20px;
+  background: #fff;
+  padding: 80px 20px;
   text-align: center;
 }
 
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 40px;
 }
 
 .project {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #2c3e50;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  background-color: #f39c12;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .project h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .project button {
@@ -140,29 +194,19 @@ button:hover {
   border: none;
   color: white;
   cursor: pointer;
+  margin-top: 20px;
+  border-radius: 30px;
 }
 
 .project button:hover {
   background-color: #f39c12;
 }
 
-/* Contact Section */
-#contact {
-  background: #333;
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-#contact a {
-  color: #f39c12;
-}
-
-/* Footer */
+/* Footer with Animated Icons */
 footer {
-  background: #333;
+  background: #2c3e50;
   color: white;
-  padding: 20px;
+  padding: 20px 20px;
   text-align: center;
 }
 
@@ -175,17 +219,27 @@ footer ul {
 
 footer ul li a {
   color: white;
-  font-size: 18px;
+  font-size: 1.5em;
+  transition: all 0.3s ease;
 }
 
 footer ul li a:hover {
   color: #f39c12;
+  transform: scale(1.1);
 }
 
-footer ul li a i {
-  margin-right: 8px;
-}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
-footer p {
-  margin-top: 20px;
+  #home {
+    flex-direction: column;
+  }
+
+  #projects .project-list {
+    grid-template-columns: 1fr;
+  }
 }
