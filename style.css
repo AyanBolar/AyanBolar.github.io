@@ -1,103 +1,102 @@
-/* Basic Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Global Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    color: #333;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
+a {
+    text-decoration: none;
+    color: #007bff;
 }
 
-section {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #f7f7f7;
+/* Hero Section */
+#hero {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
 }
 
-h1, h2, h3 {
-  font-size: 3em;
-  color: #333;
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 4em;
-  margin-bottom: 10px;
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
 }
 
-h3 {
-  font-size: 2em;
-  margin-top: 20px;
+.cta {
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #007bff;
+    font-weight: bold;
 }
 
-p {
-  font-size: 1.2em;
-  color: #555;
+/* Skills Section */
+#tech-stack {
+    padding: 50px;
+    background: #fff;
+    text-align: center;
 }
 
-.cta-button {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 1.2em;
-  margin-top: 20px;
-  display: inline-block;
-  border-radius: 5px;
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 
-.cta-button:hover {
-  background-color: #444;
+.skill-card {
+    width: 30%;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-/* Tech Stack Section */
-#tech-stacks .tech-list {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
+.progress-bar {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 0;
+    transition: width 2s;
 }
 
-#tech-stacks .tech-card {
-  background-color: #e0e0e0;
-  padding: 20px;
-  border-radius: 10px;
-  width: 22%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#projects {
+    background: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
 }
 
-#tech-stacks .tech-card h4 {
-  font-size: 1.5em;
-  color: #333;
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Sections Styling */
-section {
-  background-color: #fff;
-  margin-bottom: 30px;
+.project-card a {
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bold;
 }
 
-/* Entrepreneur Section */
-#entrepreneur {
-  background-color: #333;
-  color: white;
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 50px 0;
+    background: #fff;
 }
 
-#entrepreneur h2 {
-  font-size: 3em;
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
 }
-
-#entrepreneur p {
-  color: #bbb;
-}
-
-#entrepreneur h3 {
-  font-size: 2.5em;
-}
-
