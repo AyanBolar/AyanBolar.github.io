@@ -7,18 +7,23 @@
   <meta name="description" content="Ayan Bolar's Portfolio Website">
   <title>Ayan Bolar - Portfolio</title>
 
+  <!-- Google Fonts for creative typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- Font Awesome for social icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- Link to external CSS file -->
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
   <!-- Navigation Bar -->
   <nav>
-    <ul>
+    <div class="logo">
+      <a href="#">Ayan Bolar</a>
+    </div>
+    <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -26,8 +31,14 @@
     </ul>
   </nav>
 
-  <!-- Home Section -->
+  <!-- Home Section with Background Video -->
   <section id="home">
+    <div class="video-background">
+      <video autoplay muted loop id="bg-video">
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
     <div class="home-content">
       <h1>Hi, I'm Ayan Bolar</h1>
       <p>I'm a Computer Science student passionate about AI, Web Development, and Algo Trading.</p>
@@ -35,15 +46,20 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About Section with Animated Image -->
   <section id="about">
     <div class="about-content">
-      <img src="your-photo.jpg" alt="Ayan Bolar" class="about-photo">
-      <p>I am a Computer Science undergrad exploring technologies like Artificial Intelligence, Web Development, and Algo Trading. I am passionate about solving real-world problems through technology and building innovative solutions.</p>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I am a Computer Science undergrad exploring technologies like Artificial Intelligence, Web Development, and Algo Trading. I am passionate about solving real-world problems through technology and building innovative solutions.</p>
+      </div>
+      <div class="about-photo">
+        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Ayan Bolar" class="animated-img"/>
+      </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects Section with Hover Animations -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="project-list">
@@ -66,7 +82,7 @@
     <p>Feel free to reach out to me via email at <a href="mailto:your.email@example.com">your.email@example.com</a></p>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer with Icons and Animations -->
   <footer>
     <p>Connect with me:</p>
     <ul>
