@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ayan Bolar">
-    <meta name="description" content="Ayan Bolar's 3D Portfolio Website">
-    <title>3D Portfolio - Ayan Bolar</title>
-
-    <!-- Google Fonts for typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Include Three.js from CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-    <!-- Link to External CSS file -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 3D container for Three.js -->
-    <div id="3d-container"></div>
-
-    <!-- Main content section -->
-    <div class="content">
-        <h1>Hi, I'm Ayan Bolar</h1>
-        <p>I'm a Computer Science student passionate about AI, Web Development, and Algo Trading.</p>
-        <button><a href="#projects">View My Work</a></button>
-    </div>
-
-    <!-- External JavaScript file -->
-    <script src="script.js"></script>
+  <div id="scene-container">
+    <!-- 3D Canvas rendered here -->
+    <canvas id="three-canvas"></canvas>
+  </div>
+  
+  <!-- Add Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/controls/OrbitControls.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
