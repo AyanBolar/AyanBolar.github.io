@@ -1,83 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayan Bolar - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ayan Bolar's Portfolio - Full Stack Developer & Aspiring Entrepreneur">
+    <title>Ayan Bolar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <!-- Hero Section -->
-    <section id="hero">
-      <h1>AYAN BOLAR</h1>
-      <p>Here to connect. Untangle the web with ME.</p>
-      <a href="#tech-stacks" class="cta-button">Explore My Skills</a>
-    </section>
+    <header id="hero">
+        <h1>AYAN BOLAR</h1>
+        <p>Here to connect. Untangle the web with ME.</p>
+        <a href="#tech-stack" class="cta">Explore My Skills</a>
+    </header>
 
-    <!-- Tech Stacks -->
-    <section id="tech-stacks">
-      <h2>MY TECH STACKS</h2>
-      <h3>Fullstack Developer</h3>
-      <div class="tech-list">
-        <div class="tech-card">
-          <h4>Front-End</h4>
-          <p>HTML, CSS, JavaScript, TypeScript, React.js, Next.js, Redux, Tailwind CSS, Bootstrap</p>
+    <section id="tech-stack">
+        <h2>MY TECH STACKS</h2>
+        <h3>Fullstack Developer</h3>
+
+        <div class="skills-container">
+            <div class="skill-card">
+                <h4>React.js</h4>
+                <div class="progress-bar" data-skill="80"></div>
+            </div>
+            <div class="skill-card">
+                <h4>Node.js</h4>
+                <div class="progress-bar" data-skill="70"></div>
+            </div>
+            <div class="skill-card">
+                <h4>Django</h4>
+                <div class="progress-bar" data-skill="60"></div>
+            </div>
         </div>
-        <div class="tech-card">
-          <h4>Back-End</h4>
-          <p>Node.js, Express.js, Django, Flask, PHP</p>
+    </section>
+
+    <section id="projects">
+        <h2>MY PROJECTS</h2>
+        <div class="project-card">
+            <h3>Project 1: Web Application</h3>
+            <p>Description of the web app project, showcasing skills like React.js, Node.js, etc.</p>
+            <a href="#">View Project</a>
         </div>
-        <div class="tech-card">
-          <h4>Databases</h4>
-          <p>MySQL, PostgreSQL, MongoDB, Firebase</p>
+        <div class="project-card">
+            <h3>Project 2: Machine Learning</h3>
+            <p>Machine learning project built with Python and TensorFlow.</p>
+            <a href="#">View Project</a>
         </div>
-        <div class="tech-card">
-          <h4>DevOps & Tools</h4>
-          <p>Git, GitHub, Docker, CI/CD Pipelines, Nginx, AWS, Heroku, Vercel</p>
-        </div>
-      </div>
     </section>
 
-    <!-- Open Source -->
-    <section id="open-source">
-      <h2>OPEN SOURCE CONTRIBUTIONS</h2>
-      <p>GitHub contributions: Pull Requests, Bug Fixes, Code Reviews</p>
-      <p>Technologies: JavaScript, React.js, Node.js, Django, Flask</p>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
     </section>
 
-    <!-- Web Development -->
-    <section id="web-development">
-      <h2>WEB DEVELOPMENT SKILLS</h2>
-      <p>Front-End: HTML, CSS, JavaScript, React.js, Next.js</p>
-      <p>Back-End: Node.js, Express.js, Django, Flask</p>
-      <p>Databases: MySQL, PostgreSQL, MongoDB</p>
-    </section>
+    <footer>
+        <p>&copy; 2024 Ayan Bolar. All rights reserved.</p>
+    </footer>
 
-    <!-- Frameworks -->
-    <section id="frameworks">
-      <h2>FRAMEWORKS</h2>
-      <p>Experience with React.js, Next.js, Vue.js, Angular, Node.js, Django, Flask, Spring Boot, and more.</p>
-    </section>
-
-    <!-- Hobbies -->
-    <section id="hobbies">
-      <h2>HOBBIES</h2>
-      <p>Content Creation, Fitness</p>
-    </section>
-
-    <!-- Entrepreneurial Aspiration -->
-    <section id="entrepreneur">
-      <h2>ASPIRING FUTURE ENTREPRENEUR</h2>
-      <h3>HOW?</h3>
-      <p>Driven by the potential of technology to transform lives and businesses...</p>
-      <h3>WHY?</h3>
-      <p>To combine my passion for technology with my drive to solve real-world problems...</p>
-      <h3>WHEN?</h3>
-      <p>Focusing on small projects, gaining feedback, and learning from real-world experiences...</p>
-    </section>
-  </div>
-
-  <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
