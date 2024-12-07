@@ -1,4 +1,4 @@
-// JavaScript for scroll-triggered animations
+// Scroll animation trigger for elements
 window.addEventListener('scroll', function () {
   const sections = document.querySelectorAll('section');
   sections.forEach(section => {
