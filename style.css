@@ -1,4 +1,4 @@
-/* Basic page styling */
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +6,98 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  overflow: hidden;
-  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-#scene-container {
+.container {
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }
 
-canvas {
-  display: block;
+section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
 }
+
+h1, h2, h3 {
+  font-size: 3em;
+  color: #333;
+}
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.cta-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #444;
+}
+
+/* Tech Stack Section */
+#tech-stacks .tech-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+#tech-stacks .tech-card {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 22%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#tech-stacks .tech-card h4 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* Sections Styling */
+section {
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Entrepreneur Section */
+#entrepreneur {
+  background-color: #333;
+  color: white;
+}
+
+#entrepreneur h2 {
+  font-size: 3em;
+}
+
+#entrepreneur p {
+  color: #bbb;
+}
+
+#entrepreneur h3 {
+  font-size: 2.5em;
+}
+
